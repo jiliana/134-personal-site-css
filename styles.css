@@ -3,6 +3,8 @@
     --main-text: black;
     --sub-text: grey;
     --accent-text: #FF87FF;
+    
+    scroll-behavior: smooth;
 }
 
 body {
@@ -92,11 +94,23 @@ header > nav a:hover {
 }
 
 /* Main Splash */
+@media all and (max-width: 400px) {
+    #main-splash > button {
+        font-size: 20px;
+    }
+}
+@media not all and (max-width: 400px) {
+    #main-splash > button {
+        font-size: 32px;
+    }
+}
+
 #bg-blur-1 {
     position: absolute;
     width: 800px;
     left: -300px;
     bottom: -300px;
+    z-index: -1;
 }
 
 #bg-blur-2 {
@@ -104,6 +118,7 @@ header > nav a:hover {
     width: 800px;
     top: -300px;
     right: -300px;
+    z-index: -1;
 }
 
 
@@ -115,6 +130,9 @@ header > nav a:hover {
     min-height: 40vh;
     position: relative;
     border-bottom: 1px solid var(--accent-text);
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 #main-splash > h1, #main-splash > h2  {
@@ -126,11 +144,11 @@ header > nav a:hover {
     max-width: 700px
 }
 
+
 #main-splash > button {
     border: 1px solid var(--main-text);
     border-radius: 10px;
-    background-color: var(--main-bg);
-    font-size: 32px;
+    background-color: transparent;
     font-weight: 200;
     padding: 10px 60px;
     transition-duration: 200ms;
@@ -209,11 +227,11 @@ header > nav a:hover {
     margin: 0;
 }
 
-.project-card-content > ul {
+.tool-pill {
     padding: 0px;
 }
 
-.project-card-content > ul li {
+.tool-pill li {
     padding: 5px 15px;
     margin-right: 5px;
     display: inline-flex;
@@ -235,7 +253,7 @@ p {
 
 /* About Me */
 #about-me { 
-    padding: 50px 0;
+    padding: 50px 20px;
     font-size: 24px;
 }
 
@@ -261,6 +279,7 @@ p {
     list-style: none;
     text-align: left;
     max-width: 500px;
+    padding: 20px 0;
 }
 
 #about-content > ul li {
@@ -278,6 +297,8 @@ p {
 #contact-me { 
     padding: 50px 0;
     text-align: center;
+    overflow: hidden;
+    padding: 20px;
 }
 
 #contact-me > .spaced-text{
@@ -312,7 +333,7 @@ p {
 #contact-form {
     font-size: 16px;
     border: 1px solid black;
-    width: 300px;
+    max-width: 300px;
     margin: auto;
     padding: 40px;
     border-radius: 10px;
@@ -418,7 +439,17 @@ footer > p a:hover {
 }
 
 /* Case Studies */
-.secondary-nav {
-    position: relative;
-    top: 60px;
+main {
+    padding-top:  20vh;
+    margin: auto;
+}
+
+table {
+    margin: 80px auto;
+    font-size: 24px;
+    row-gap: 20px;
+}
+
+main > h1, main > h2 {
+    margin: 0;
 }
