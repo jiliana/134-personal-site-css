@@ -411,6 +411,7 @@ footer {
     display: flex;
     justify-content: space-around;
     border: 10 dotted var(--accent-text);
+    margin-top: 100px;
 }
 
 footer * {
