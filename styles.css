@@ -3,7 +3,7 @@
     --main-text: black;
     --sub-text: grey;
     --accent-text: #FF87FF;
-    
+
     scroll-behavior: smooth;
 }
 
@@ -12,6 +12,7 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     cursor: url('images/favicon/flower.png'), auto;
+    text-align: center;
 }
 
 .center {
@@ -440,7 +441,7 @@ footer > p a:hover {
 
 /* Case Studies */
 main {
-    padding-top:  20vh;
+    padding-top:  52px;
     margin: auto;
 }
 
