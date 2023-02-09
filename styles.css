@@ -478,3 +478,43 @@ table {
 main > h1, main > h2 {
     margin: 0;
 }
+
+
+/* Demos */
+#demos-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 50px;
+    text-align: left;
+    padding: 0;
+}
+
+#demos-list h3 {
+    margin: 0;
+}
+
+#demos-list a {
+    margin-top: 10px;
+    color: var(--accent-text);
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+}
+
+#demos-list a:hover::after {
+    content:">>";
+    color: black;
+}
+
+#demos-list > li {
+    border: 1px solid var(--main-text);
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+}
