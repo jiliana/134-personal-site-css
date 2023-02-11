@@ -10,11 +10,11 @@
 ::selection {
     background: var(--accent-text); /* WebKit/Blink Browsers */
     color: var(--main-bg);
-  }
-  ::-moz-selection {
-    background: var(--accent-text); /* Gecko Browsers */
-    color: var(--main-bg);
-  }
+}
+::-moz-selection {
+background: var(--accent-text); /* Gecko Browsers */
+color: var(--main-bg);
+}
 
 body {
     flex-direction: row;
@@ -23,6 +23,8 @@ body {
     cursor: url('images/favicon/flower.png'), auto;
     text-align: center;
 }
+
+
 
 .center {
     text-align: center;
@@ -517,4 +519,9 @@ main > h1, main > h2 {
     min-width: 200px;
     max-width: 300px;
     padding: 10px;
+}
+
+#demo-toc {
+    list-style: none;
+    padding: 0;
 }
