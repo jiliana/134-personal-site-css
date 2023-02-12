@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon/flower.svg">
 </head>
 <body>
 
     <header>
-        <a href="/"><img src="/images/favicon/favicon-192x192.png" alt="Home" width="50" height="50"></a>
+        <a href="/"><img src="/images/favicon/J.svg" alt="Home" width="50" height="50"></a>
         <nav>
             <ul>
                 <li><a href="/#projects">Projects</a></li>
@@ -27,21 +27,17 @@
             </ul>
         </nav>
     </header>
-
-    <nav class="secondary-nav">
-        <a href="../demos.html">&lt; Demos</a>
-    </nav>
     
     <main>
-        <h1>Demo 1</h1>
-        <h2>Table of Contents</h2>
-            <ol>
-                <li>Form</li>
-                <li>Table</li>
-                <li>Template</li>
-                <li>Canvas</li>
-                <li>Media</li>
-            </ol>        
+        <h1>HTML Tags</h1>
+        <h3>Table of Contents</h3>
+        <ol id="demo-toc">
+            <li>Form</li>
+            <li>Table</li>
+            <li>Template</li>
+            <li>Canvas</li>
+            <li>Media</li>
+        </ol>        
         
     </main>
 
@@ -90,9 +86,8 @@
         </form>
 
         <pre>
-            This form sends an email with the below format.
-
             1. Subject
+              - email subject line
             2. Body
         </pre>
     </section>
@@ -141,7 +136,7 @@
 
     <section>
         <h2>Canvas</h2>
-        <canvas id="canvas" width="500" height="500" style="border:1px solid black"></canvas>
+        <canvas id="canvas" style="border:1px solid black"></canvas>
     </section>
 
     <hr>
@@ -150,13 +145,13 @@
         <h2>Media</h2>
         <h2>Iframe</h2>
         <p>UCSD website</p>
-        <iframe src="https://ucsd.edu/" width="500" height="500"></iframe>
+        <iframe src="https://ucsd.edu/" width="80%" height="500px"></iframe>
         <h2>Audio</h2>
         <audio controls>
             <source src="../images/funky-music.mp3" type="audio/mpeg">
         </audio>
         <h2>Video</h2>
-        <video controls width="500">
+        <video controls width="80%">
             <source src="../images/clouds.mp4" type="video/mp4">
         </video>
 
@@ -165,12 +160,15 @@
     <hr>
 
     <footer>
-        <a href="#">&#8593; Scroll to Top</a>
-        <p><i>&copy; Jiliana Tiu 2023</i></p>
-        <p>
+        <a href="#" class="scroll-top">&#8593; Scroll to top</a>
+        <p>&copy; Jiliana Tiu 2023</p>
+        <p> Find me on 
             <a href="https://www.linkedin.com/in/jilianatiu/" target="_blank">LinkedIn</a>
             <a href="https://github.com/jiliana" target="_blank">GitHub</a>
             <a href="mailto:jatiu@ucsd.edu">Email</a>
+        </p>
+        <p>
+            <a target="_blank" href="https://icons8.com/icon/23038/spa-flower">Spa Flower</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </p>
     </footer>
 
