@@ -140,6 +140,24 @@ nav input {
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
 
+    nav input:checked ~ .ham-menu > .ham-line {
+      background-color: black;
+    }
+    nav input:checked ~ .ham-menu > .line1{
+      transform-origin: top right;
+      transform: rotate(-45deg);
+      transition: transform 100ms ease-in-out;
+    }
+    nav input:checked ~ .ham-menu > .line2{
+      opacity: 0;
+      transition: transform 100ms ease-in-out;
+    }
+    nav input:checked ~ .ham-menu > .line3{
+      transform-origin: top right;
+      transform: rotate(45deg) translate(2px, 0px);
+      transition: transform 100ms ease-in-out;
+    }
+
     nav input {
         display: inherit;
         position: absolute;
