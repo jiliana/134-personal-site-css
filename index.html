@@ -19,7 +19,7 @@
     <header>
         <a href="/"><img src="/images/favicon/J.svg" alt="Home" width="50" height="50"></a>
         <nav>
-            <input type="checkbox" />
+            <input type="checkbox">
             <div class="ham-menu">
                 <span class="ham-line line1"></span>
                 <span class="ham-line line2"></span>
@@ -34,10 +34,10 @@
     </header>
 
     <main id="main-splash">
-        <svg id="bg-blur-1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.79"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feGaussianBlur stdDeviation="70" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="161.5" ry="164.5" cx="274.2955589094711" cy="342.84906197592846" fill="hsl(37, 99%, 67%)"></ellipse><ellipse rx="161.5" ry="164.5" cx="409.50304169180504" cy="400.35593082767514" fill="hsl(316, 73%, 52%)"></ellipse></g></svg>
-        <svg id="bg-blur-2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.79"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feGaussianBlur stdDeviation="70" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="161.5" ry="164.5" cx="274.2955589094711" cy="342.84906197592846" fill="hsl(37, 99%, 67%)"></ellipse><ellipse rx="161.5" ry="164.5" cx="409.50304169180504" cy="400.35593082767514" fill="hsl(316, 73%, 52%)"></ellipse></g></svg>
+        <svg id="bg-blur-1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="0.79"><defs><filter class="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="70" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="161.5" ry="164.5" cx="274.2955589094711" cy="342.84906197592846" fill="hsl(37, 99%, 67%)"></ellipse><ellipse rx="161.5" ry="164.5" cx="409.50304169180504" cy="400.35593082767514" fill="hsl(316, 73%, 52%)"></ellipse></g></svg>
+        <svg id="bg-blur-2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="0.79"><defs><filter class="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="70" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="161.5" ry="164.5" cx="274.2955589094711" cy="342.84906197592846" fill="hsl(37, 99%, 67%)"></ellipse><ellipse rx="161.5" ry="164.5" cx="409.50304169180504" cy="400.35593082767514" fill="hsl(316, 73%, 52%)"></ellipse></g></svg>
         <h1>Jiliana Tiu</h1>
         <h2>Software Engineer</h2>
         <p class="spaced-text">
@@ -49,7 +49,7 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <section id="projects-list">
+        <div id="projects-list">
             <section class="project-card">
                 <picture class="project-card-img">
                     <img src="images/phone.webp" alt="Image of Project 1">
@@ -80,7 +80,7 @@
                     <a href="project-example.html"><strong>Take a closer look...</strong></a>
                 </div>
             </section>
-        </section>
+        </div>
     </section>
 
     <section id="about-me">
