@@ -204,10 +204,6 @@ nav input {
 }
 
 /* Main Splash */
-#main-splash > button {
-  font-size: 32px;
-}
-
 #bg-blur-1 {
   position: absolute;
   width: 800px;
@@ -260,16 +256,20 @@ nav input {
   max-width: 700px;
 }
 
-#main-splash > button {
+#main-splash > #action-btn {
+  font-size: 32px;
   border: 1px solid var(--main-text);
   border-radius: 10px;
   background-color: transparent;
   font-weight: 200;
   padding: 10px 60px;
   transition-duration: 200ms;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
 }
 
-#main-splash > button:hover {
+#main-splash > #action-btn:hover {
   border: 1px solid var(--accent-text);
   color: var(--accent-text);
   letter-spacing: 1px;
